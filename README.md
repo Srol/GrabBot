@@ -17,3 +17,5 @@ To get this up-and-running you need to do the following things.
 Afterwards, anyone should be able to say `grabbot download <url>` in a public channel and the bot will download any URL supported by Youtube-DL and upload it to the Slack channel where the request was made. 
 
 Keep in mind that as youtube-dl is updated, so too will this bot need to be. If you're using Heroku like me, all that means is changing the version number in requirements.txt
+
+Additionally, using a [Heroku buildpack that supports for ffmpeg](https://github.com/shunjikonishi/heroku-buildpack-ffmpeg) will make your life easier, but it is not required.
